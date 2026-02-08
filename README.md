@@ -52,13 +52,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import gjoin from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gjoin@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/blas-ext-base-gjoin/tags). For example,
+
+```javascript
 import gjoin from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gjoin@v0.1.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gjoin@v0.1.1-deno/mod.js';
+import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gjoin@deno/mod.js';
 ```
 
 #### gjoin( N, separator, x, strideX )
@@ -156,7 +161,7 @@ var str = gjoin.ndarray( 3, '|', x, 1, x.length-3 );
 
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
-import gjoin from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gjoin@v0.1.1-deno/mod.js';
+import gjoin from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gjoin@deno/mod.js';
 
 var x = discreteUniform( 10, -100, 100, {
     'dtype': 'generic'
